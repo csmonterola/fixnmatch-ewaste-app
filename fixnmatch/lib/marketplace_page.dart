@@ -134,7 +134,7 @@ class _MarketplacePageState extends State<MarketplacePage> {
                       ),
                     ),
                     const SizedBox(width: 16),
-                    // Categories (Icons)
+                    // Categories Box (Changed)
                     Expanded(
                       child: Container(
                         height: 80,
@@ -149,13 +149,15 @@ class _MarketplacePageState extends State<MarketplacePage> {
                             ),
                           ],
                         ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: const [
-                            Icon(Icons.phone_android, size: 32),
-                            Icon(Icons.laptop_mac, size: 32),
-                            Icon(Icons.headphones, size: 32),
-                          ],
+                        child: Center(
+                          child: Text(
+                            "Categories",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: darkBrown,
+                              fontSize: 16,
+                            ),
+                          ),
                         ),
                       ),
                     ),
